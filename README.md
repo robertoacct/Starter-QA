@@ -16,4 +16,10 @@ Pré-requisitos: instalação de VS Code e Nodejs, usuário/conta do Github conf
 
     Clique em E2E Testing > Start E2E Testin in Chrome > googleSearch.feature
 
+# ///////////////////////////////////////////////////////////////////////////////////////
 
+# Installation process steps
+
+1- Install extensions: Gitlens, Material icone, Cucumber(Gherkin) Full Support and Snippets and Syntax Highlight for Gherkin (Cucumber)
+
+2- install cucumber processor - npm install --save-dev cypress-cucumber-preprocessor
