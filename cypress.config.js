@@ -6,6 +6,6 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       on('file:preprocessor', cucumber())
     },
-    specPattern: "cypress/e2e/**/*.{js,jsx,ts,tsx,feature}"
+    specPattern: "cypress/tests/**/*.{js,jsx,ts,tsx,feature}"
   },
 });
