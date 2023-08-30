@@ -4,12 +4,12 @@ Given("I access Automation Exercise page", () => {
     cy.visit("https://automationexercise.com/signup");
 })
 
-When("I fill the Signup fields", () => {
+And("I fill the Signup fields", () => {
     cy.get('[data-qa="signup-name"]').type('Roberto');
     cy.get('[data-qa="signup-email"]').type('roberto.sacramento@acct.global');
 })
 
-And('I click on Signup button', () =>{
+When('I click on Signup button', () =>{
     cy.get('[data-qa="signup-button"]').click();
 })
 
