@@ -18,3 +18,8 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+beforeEach(() =>{
+    cy.visit('/')
+    cy.log('this runs before each test')
+});

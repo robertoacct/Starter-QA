@@ -1,17 +1,17 @@
-
-
-const nameField = '[data-qa="signup-name"]';
-const emailField = '[data-qa="signup-email"]';
-const signupButton = '[data-qa="signup-button"]';
-
 export class SignupElements{
 
-nameField = () => this.nameField().$(nameField);
-emailFiel = () => this.emailFiel().$(emailField);
-signupButton = () => this.nameField().$(signupButton);
+nameField = () => $('[data-qa="signup-name"]');
+emailField = () => $('[data-qa="signup-email"]');
+signupButton = () =>$('[data-qa="signup-button"]');
 
-constructor() {
-    
+inputName(username,useremail){
+    this.SignupElements.nameField().type(username);
+    this.SignupElements.emailField().type(useremail);
+}
+
+submitButton(submitBtn){
+    this.SignupElements.submitBtn().click()
 }
     
 }
+export default SignupElements;

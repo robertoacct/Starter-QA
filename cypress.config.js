@@ -6,6 +6,9 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       on('file:preprocessor', cucumber())
     },
-    specPattern: "cypress/tests/**/*.{js,jsx,ts,tsx,feature}"
+    specPattern: "cypress/tests/**/*.{js,jsx,ts,tsx,feature}",
+    baseUrl: "https://automationexercise.com",
   },
 });
+
+

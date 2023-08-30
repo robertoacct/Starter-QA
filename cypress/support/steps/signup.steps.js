@@ -1,7 +1,10 @@
 import {Before, Given, When, And, Then} from "cypress-cucumber-preprocessor/steps"
+import {SignupElements} from "../pages/signup/signup.elements"
 
-Given("I access Automation Exercise page", () => {
-    cy.visit("https://automationexercise.com/signup");
+const signupElements = new SignupElements();
+
+Given("I click on login button", () => {
+    cy.get('.shop-menu > .nav > :nth-child(4) > a').click();
 })
 
 And("I fill the Signup fields", () => {
